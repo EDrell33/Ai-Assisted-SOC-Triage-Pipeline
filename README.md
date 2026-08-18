@@ -80,6 +80,7 @@ The workflow is scheduled/near-real-time rather than webhook push-based. In this
 | Wazuh services and ports | [`screenshots/05-wazuh-services-active.png`](screenshots/05-wazuh-services-active.png), [`screenshots/08-soc01-wazuh-listening-ports.png`](screenshots/08-soc01-wazuh-listening-ports.png) |
 | Windows endpoint active | [`screenshots/10-wazuh-dashboard-agent-active.png`](screenshots/10-wazuh-dashboard-agent-active.png) |
 | Sysmon telemetry | [`screenshots/11-windows-sysmon-service-and-events.png`](screenshots/11-windows-sysmon-service-and-events.png) |
+| Windows service creation detection | [`screenshots/41-wazuh-threat-hunting-service-events.png`](screenshots/41-wazuh-threat-hunting-service-events.png), [`screenshots/42-wazuh-rule-61138-new-service-created.png`](screenshots/42-wazuh-rule-61138-new-service-created.png) |
 | Failed logon detection | [`screenshots/18-wazuh-failed-logon-alerts.png`](screenshots/18-wazuh-failed-logon-alerts.png) |
 | n8n + Ollama POC | [`screenshots/26-n8n-sample-alert-workflow.png`](screenshots/26-n8n-sample-alert-workflow.png), [`screenshots/27-ai-triage-output-sample-alert.png`](screenshots/27-ai-triage-output-sample-alert.png) |
 | Live Wazuh API integration | [`screenshots/31-n8n-wazuh-api-to-ollama-workflow.png`](screenshots/31-n8n-wazuh-api-to-ollama-workflow.png) |

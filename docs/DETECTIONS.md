@@ -74,3 +74,21 @@ A local test account was created, added to the local Administrators group, remov
 ### Analyst Notes
 
 Unexpected local account creation or Administrators group membership changes are high-value escalation indicators. Triage should validate who performed the change, whether a change ticket exists, and whether any suspicious process or remote logon preceded the change.
+
+---
+
+## Detection 4: New Windows Service Created
+
+| Field | Value |
+|---|---|
+| Data source | Windows System Event Log |
+| Windows Event ID | `7045` |
+| Wazuh rule | `61138` |
+| Rule level | `5` |
+| Description | New Windows Service Created |
+| ATT&CK technique | `T1543.003` — Windows Service |
+| Screenshots | [`../screenshots/41-wazuh-threat-hunting-service-events.png`](../screenshots/41-wazuh-threat-hunting-service-events.png), [`../screenshots/42-wazuh-rule-61138-new-service-created.png`](../screenshots/42-wazuh-rule-61138-new-service-created.png) |
+
+### Analyst Notes
+
+New services can be legitimate software-installation artifacts, but adversaries also use services for persistence or privilege escalation. Triage should inspect the service name, binary path, signer, creating process, user context, and nearby endpoint activity before assigning severity.

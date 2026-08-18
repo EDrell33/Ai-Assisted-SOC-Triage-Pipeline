@@ -42,3 +42,5 @@
 | 38 | [`38-n8n-wazuh-alert-ai-email-workflow-active.png`](../screenshots/38-n8n-wazuh-alert-ai-email-workflow-active.png) | Published/active n8n alert workflow canvas. |
 | 39 | [`39-n8n-workflows-overview-published.png`](../screenshots/39-n8n-workflows-overview-published.png) | n8n workflows overview showing alert workflow published. |
 | 40 | [`40-gmail-alert-inbox-preview-redacted.png`](../screenshots/40-gmail-alert-inbox-preview-redacted.png) | Gmail inbox preview showing Wazuh alert email received; sanitized. |
+| 41 | [`41-wazuh-threat-hunting-service-events.png`](../screenshots/41-wazuh-threat-hunting-service-events.png) | Wazuh Threat Hunting results showing Windows service creation and agent-stop events. |
+| 42 | [`42-wazuh-rule-61138-new-service-created.png`](../screenshots/42-wazuh-rule-61138-new-service-created.png) | Wazuh rule 61138 details for Windows Event ID 7045: new Windows service created. |
