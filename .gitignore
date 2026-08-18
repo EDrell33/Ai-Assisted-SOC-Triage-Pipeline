@@ -1,0 +1,18 @@
+# Secrets and local runtime data
+.env
+*.env
+n8n_data/
+wazuh-install-files/
+wazuh-install-files.tar
+*password*
+*secret*
+*token*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log

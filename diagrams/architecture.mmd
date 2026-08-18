@@ -1,0 +1,9 @@
+flowchart LR
+    WIN[Windows 11 Endpoint<br/>192.168.56.104<br/>Wazuh Agent + Sysmon] -->|Security/Sysmon events| WAZUH[Ubuntu SOC01<br/>192.168.56.103<br/>Wazuh Manager]
+    WAZUH --> INDEXER[Wazuh Indexer<br/>wazuh-alerts-*]
+    WAZUH --> DASH[Wazuh Dashboard]
+    N8N[n8n SOAR-style Automation<br/>on SOC01] -->|polls every minute| INDEXER
+    N8N -->|alert JSON| OLLAMA[Ollama<br/>llama3.2:3b on SOC01]
+    OLLAMA -->|triage summary| N8N
+    N8N -->|SMTP| EMAIL[Analyst Email Notification]
+    KALI[Kali Analyst/Test VM<br/>192.168.56.102] -->|connectivity and port validation| WAZUH
