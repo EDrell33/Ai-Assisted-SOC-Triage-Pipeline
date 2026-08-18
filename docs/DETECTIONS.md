@@ -8,7 +8,6 @@
 | Wazuh rule | `92027` |
 | Rule level | `4` |
 | Description | PowerShell process spawned PowerShell instance |
-| Screenshot | [`../screenshots/16-wazuh-rule-92027-powershell-process.png`](../screenshots/16-wazuh-rule-92027-powershell-process.png) |
 
 ### Test Procedure
 
@@ -30,7 +29,7 @@ PowerShell activity is common in administration, but it is also heavily used by 
 | Rule level | `5` |
 | Description | Logon Failure - Unknown user or bad password |
 | Test username | `FakeUser` |
-| Screenshot | [`../screenshots/18-wazuh-failed-logon-alerts.png`](../screenshots/18-wazuh-failed-logon-alerts.png) |
+| Screenshot | [`../screenshots/13-wazuh-failed-logon-alerts.png`](../screenshots/13-wazuh-failed-logon-alerts.png) |
 
 ### Test Procedure
 
@@ -65,7 +64,7 @@ AI-generated mappings should be reviewed by the analyst.
 | Field | Value |
 |---|---|
 | Test account | `soclabtest` |
-| Screenshot | [`../screenshots/20-wazuh-local-user-admin-change-alerts.png`](../screenshots/20-wazuh-local-user-admin-change-alerts.png) |
+| Screenshot | [`../screenshots/15-wazuh-local-user-admin-change-alerts.png`](../screenshots/15-wazuh-local-user-admin-change-alerts.png) |
 
 ### Test Procedure
 
@@ -87,7 +86,7 @@ Unexpected local account creation or Administrators group membership changes are
 | Rule level | `5` |
 | Description | New Windows Service Created |
 | ATT&CK technique | `T1543.003` — Windows Service |
-| Screenshots | [`../screenshots/41-wazuh-threat-hunting-service-events.png`](../screenshots/41-wazuh-threat-hunting-service-events.png), [`../screenshots/42-wazuh-rule-61138-new-service-created.png`](../screenshots/42-wazuh-rule-61138-new-service-created.png) |
+| Screenshots | [`../screenshots/33-wazuh-threat-hunting-service-events.png`](../screenshots/33-wazuh-threat-hunting-service-events.png), [`../screenshots/34-wazuh-rule-61138-new-service-created.png`](../screenshots/34-wazuh-rule-61138-new-service-created.png) |
 
 ### Analyst Notes
 

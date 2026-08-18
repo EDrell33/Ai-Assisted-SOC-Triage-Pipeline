@@ -80,13 +80,12 @@ The workflow is scheduled/near-real-time rather than webhook push-based. In this
 | Wazuh services and ports | [`screenshots/05-wazuh-services-active.png`](screenshots/05-wazuh-services-active.png), [`screenshots/08-soc01-wazuh-listening-ports.png`](screenshots/08-soc01-wazuh-listening-ports.png) |
 | Windows endpoint active | [`screenshots/10-wazuh-dashboard-agent-active.png`](screenshots/10-wazuh-dashboard-agent-active.png) |
 | Sysmon telemetry | [`screenshots/11-windows-sysmon-service-and-events.png`](screenshots/11-windows-sysmon-service-and-events.png) |
-| Windows service creation detection | [`screenshots/41-wazuh-threat-hunting-service-events.png`](screenshots/41-wazuh-threat-hunting-service-events.png), [`screenshots/42-wazuh-rule-61138-new-service-created.png`](screenshots/42-wazuh-rule-61138-new-service-created.png) |
-| Failed logon detection | [`screenshots/18-wazuh-failed-logon-alerts.png`](screenshots/18-wazuh-failed-logon-alerts.png) |
-| n8n + Ollama POC | [`screenshots/26-n8n-sample-alert-workflow.png`](screenshots/26-n8n-sample-alert-workflow.png), [`screenshots/27-ai-triage-output-sample-alert.png`](screenshots/27-ai-triage-output-sample-alert.png) |
-| Live Wazuh API integration | [`screenshots/31-n8n-wazuh-api-to-ollama-workflow.png`](screenshots/31-n8n-wazuh-api-to-ollama-workflow.png) |
-| Real alert AI summary | [`screenshots/35-ai-summary-real-wazuh-alert.png`](screenshots/35-ai-summary-real-wazuh-alert.png) |
-| Email notification | [`screenshots/37-email-alert-received-redacted.png`](screenshots/37-email-alert-received-redacted.png) |
-| Published automation | [`screenshots/38-n8n-wazuh-alert-ai-email-workflow-active.png`](screenshots/38-n8n-wazuh-alert-ai-email-workflow-active.png) |
+| Windows service creation detection | [`screenshots/33-wazuh-threat-hunting-service-events.png`](screenshots/33-wazuh-threat-hunting-service-events.png), [`screenshots/34-wazuh-rule-61138-new-service-created.png`](screenshots/34-wazuh-rule-61138-new-service-created.png) |
+| Failed logon detection | [`screenshots/13-wazuh-failed-logon-alerts.png`](screenshots/13-wazuh-failed-logon-alerts.png) |
+| n8n + Ollama POC | [`screenshots/21-n8n-sample-alert-workflow.png`](screenshots/21-n8n-sample-alert-workflow.png), [`screenshots/22-ai-triage-output-sample-alert.png`](screenshots/22-ai-triage-output-sample-alert.png) |
+| Live Wazuh API integration | [`screenshots/25-n8n-wazuh-api-to-ollama-workflow.png`](screenshots/25-n8n-wazuh-api-to-ollama-workflow.png) |
+| Email notification | [`screenshots/29-email-alert-received-redacted.png`](screenshots/29-email-alert-received-redacted.png) |
+| Published automation | [`screenshots/30-n8n-wazuh-alert-ai-email-workflow-active.png`](screenshots/30-n8n-wazuh-alert-ai-email-workflow-active.png) |
 
 See the full screenshot catalog in [`docs/SCREENSHOTS.md`](docs/SCREENSHOTS.md).
 

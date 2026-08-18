@@ -438,13 +438,6 @@ rule.level: 15 to +∞
 
 remove it. The PowerShell event may be level 4.
 
-Screenshot proof:
-
-```text
-12-wazuh-threat-hunting-powershell-events.png
-16-wazuh-rule-92027-powershell-process.png
-```
-
 ## Detection 2: Failed Logon Event ID 4625
 
 On Windows:
@@ -478,8 +471,8 @@ FakeUser
 Screenshot proof:
 
 ```text
-17-windows-failed-logon-runas-test.png
-18-wazuh-failed-logon-alerts.png
+12-windows-failed-logon-runas-test.png
+13-wazuh-failed-logon-alerts.png
 ```
 
 ## Detection 3: Local User/Admin Group Change
@@ -516,8 +509,8 @@ data.win.system.eventID: 4720 OR data.win.system.eventID: 4732 OR data.win.syste
 Screenshot proof:
 
 ```text
-19-windows-local-user-admin-change-test.png
-20-wazuh-local-user-admin-change-alerts.png
+14-windows-local-user-admin-change-test.png
+15-wazuh-local-user-admin-change-alerts.png
 ```
 
 ---
@@ -624,9 +617,9 @@ docker-compose up -d
 Screenshot proof:
 
 ```text
-21-docker-n8n-version-proof.png
-22-n8n-container-started.png
-23-n8n-web-ui-accessible.png
+16-docker-n8n-version-proof.png
+17-n8n-container-started.png
+18-n8n-web-ui-accessible.png
 ```
 
 ---
@@ -697,8 +690,8 @@ docker exec -it soc-n8n wget -qO- http://host.docker.internal:11434/api/tags
 Screenshot proof:
 
 ```text
-24-ollama-model-installed-and-tested.png
-25-n8n-container-can-reach-ollama.png
+19-ollama-model-installed-and-tested.png
+20-n8n-container-can-reach-ollama.png
 ```
 
 ---
@@ -742,8 +735,8 @@ then n8n sent `"false"` as a string instead of `false` as a boolean. Use a full 
 Screenshot proof:
 
 ```text
-26-n8n-sample-alert-workflow.png
-27-ai-triage-output-sample-alert.png
+21-n8n-sample-alert-workflow.png
+22-ai-triage-output-sample-alert.png
 ```
 
 ---
@@ -818,9 +811,9 @@ Bearer {{$json.data}}
 Screenshot proof:
 
 ```text
-29-n8n-fetches-wazuh-agents.png
-30-ai-summary-live-wazuh-api-data.png
-31-n8n-wazuh-api-to-ollama-workflow.png
+23-n8n-fetches-wazuh-agents.png
+24-ai-summary-live-wazuh-api-data.png
+25-n8n-wazuh-api-to-ollama-workflow.png
 ```
 
 ---
@@ -911,8 +904,7 @@ or generate a fresh failed logon.
 Screenshot proof:
 
 ```text
-32-n8n-indexer-query-zero-hits.png
-33-n8n-queries-real-failed-logon-alert-redacted.png
+26-n8n-indexer-query-zero-hits.png
 ```
 
 ---
@@ -976,7 +968,7 @@ return newAlerts;
 Screenshot proof:
 
 ```text
-34-n8n-deduplicates-and-extracts-alert.png
+27-n8n-deduplicates-and-extracts-alert.png
 ```
 
 ---
@@ -1005,12 +997,6 @@ Expression:
 ```
 
 Professional note: validate the MITRE mapping. Failed logons often align more naturally with `T1110 - Brute Force` if repeated, or `T1078 - Valid Accounts` depending on context.
-
-Screenshot proof:
-
-```text
-35-ai-summary-real-wazuh-alert.png
-```
 
 ---
 
@@ -1074,9 +1060,9 @@ HTML body expression:
 Screenshot proof:
 
 ```text
-36-n8n-send-email-success-redacted.png
-37-email-alert-received-redacted.png
-40-gmail-alert-inbox-preview-redacted.png
+28-n8n-send-email-success-redacted.png
+29-email-alert-received-redacted.png
+32-gmail-alert-inbox-preview-redacted.png
 ```
 
 ---
@@ -1100,8 +1086,8 @@ The bottom **Execute workflow** button is manual testing only.
 Screenshot proof:
 
 ```text
-38-n8n-wazuh-alert-ai-email-workflow-active.png
-39-n8n-workflows-overview-published.png
+30-n8n-wazuh-alert-ai-email-workflow-active.png
+31-n8n-workflows-overview-published.png
 ```
 
 ---
